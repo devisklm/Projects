@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome</h2>
+        <?php
+        $email = $_GET['email'];
+        $firstName = isset($_GET['firstName']) ? $_GET['firstName'] : '';
+        // Output the welcome message
+        echo "Welcome, " . $firstName . "!<br>";
+        echo "Your email address: " . $email;
+        ?>   
+    </div>
+</body>
+</html>

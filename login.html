@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <style>
+        .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 105vh;
+        }
+        
+    </style>
+</head>
+<body>
+<div class="container center-container">
+        <div class="col-md-4">
+                <form action="login_process.php" method="post">
+                <h3 class="text-center">Login</h2>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Login</button>
+               </div>
+               <p class="text-center">Not yet a member?<a href="registration.html">Sign Up</a></p>
+          </form>
+</div>
+</div>
+</div>
+</body>
+</html>
